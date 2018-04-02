@@ -35,7 +35,8 @@ info:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.1.128:8761/eureka/,http://192.168.1.128:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
+      #defaultZone: http://192.168.1.128:8761/eureka/,http://192.168.1.128:8762/eureka/
   instance:
-    #将自己的ip注册到额ureka server
+    #将自己的ip注册到eureka server
     prefer-ip-address: true
