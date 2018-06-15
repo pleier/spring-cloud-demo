@@ -35,7 +35,7 @@ public class MovieController {
   public User findByIdFallback(Long id){
     User user = new User();
     user.setAge(18);
-    user.setId(-1L);
+    user.setId(id);
     user.setName("默认用户");
     return user;
   }
