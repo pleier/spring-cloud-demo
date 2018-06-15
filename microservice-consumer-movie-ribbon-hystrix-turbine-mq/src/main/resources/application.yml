@@ -1,0 +1,20 @@
+server:
+  port: 8010
+
+spring:
+    application:
+      #注册到eureka server 上的应用名称
+      name: microservice-consumer-user
+    rabbitmq:
+      host: 192.168.3.128
+      username: plei
+      password: plei
+      port: 5672
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    #将自己的ip注册到额ureka server
+    prefer-ip-address: true
