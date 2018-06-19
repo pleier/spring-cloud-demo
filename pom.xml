@@ -32,6 +32,7 @@
         <module>microservice-consumer-movie-ribbon-hystrix-turbine-mq</module>
         <module>microservice-hystrix-turbine-mq</module>
         <module>microservice-gateway-zuul</module>
+        <module>microservice-fileup-load</module>
     </modules>
 
     <parent>
