@@ -11,4 +11,7 @@ spring:
           uri: https://gitee.com/pleiyang/springcloudconfig
           username: pleiyang
           password: mygitee1218
-
+#logging:
+#  level:
+#    org.springframework.cloud: debug
+#    org.springframework.boot: debug
