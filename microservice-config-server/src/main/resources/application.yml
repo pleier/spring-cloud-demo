@@ -9,8 +9,8 @@ spring:
         git:
         #配置git仓库的地址
           uri: https://gitee.com/pleiyang/springcloudconfig
-          username: pleiyang
-          password: mygitee1218
+          username:
+          password:
 #logging:
 #  level:
 #    org.springframework.cloud: debug
