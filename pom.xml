@@ -37,12 +37,13 @@
         <module>microservice-gateway-zuul-fallback</module>
         <module>microservice-gateway-zuul-aggregation</module>
         <module>microservice-config-server</module>
+        <module>microservice-config-client</module>
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.3.RELEASE</version>
+        <version>1.5.9.RELEASE</version>
     </parent>
 
     <!-- 引入spring boot的依赖 -->
@@ -77,7 +78,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Camden.SR4</version>
+                <version>Edgware.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
