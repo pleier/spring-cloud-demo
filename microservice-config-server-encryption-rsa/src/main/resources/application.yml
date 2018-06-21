@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+        #配置git仓库的地址
+          uri: https://gitee.com/pleiyang/springcloudconfig
+          username:
+          password:
+encrypt:
+  key-store:
+    location: classpath:/server.jks
+    password: letmein
+    alias: mytestkey
+    secret: changeme
