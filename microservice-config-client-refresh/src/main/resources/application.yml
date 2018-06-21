@@ -1,0 +1,7 @@
+server:
+  port: 8081
+
+#关闭验证，解决刷新配置是权限不足问题
+management:
+  security:
+      enabled: false
