@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * 简单微服务网关
+ *  聚合微服务
  *
  * @author : pleier
  * @date : 2018/6/19
