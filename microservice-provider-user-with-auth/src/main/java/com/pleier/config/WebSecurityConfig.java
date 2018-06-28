@@ -30,11 +30,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        //所有的请求都要经过httpBasic认证
        http.authorizeRequests().anyRequest().authenticated().and().httpBasic();
     }
 
     @Bean
     public PasswordEncoder passwordEncoder(){
+        //明文编码器。这是一个不做任何操作的密码编码器，是spring
+        //提供给我们做明文测试的
         return NoOpPasswordEncoder.getInstance();
     }
 
@@ -82,7 +85,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         @Override
         public Collection<? extends GrantedAuthority> getAuthorities() {
-            Collection<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+            Collection<GrantedAuthority> authorities = new ArrayList<>();
             SimpleGrantedAuthority authority = new SimpleGrantedAuthority(this.role);
             authorities.add(authority);
             return authorities;

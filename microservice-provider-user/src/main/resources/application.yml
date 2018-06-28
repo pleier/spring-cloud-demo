@@ -40,3 +40,4 @@ eureka:
   instance:
     #将自己的ip注册到eureka server
     prefer-ip-address: true
+    ip-address: 192.168.3.64
